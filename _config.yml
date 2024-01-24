@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: RAG4j
+title: RAG4j/p
 description: >- # this means to ignore newlines until "baseurl:"
   RAG4j is a java project that only contains what you really need to build a Retrieval Augmented Generation system. It
   contains basic implementations, but also adds observability and quality checks for all the parts the generator as well
