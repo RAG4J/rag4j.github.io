@@ -20,9 +20,8 @@
 
 title: RAG4j/p
 description: >- # this means to ignore newlines until "baseurl:"
-  RAG4j is a java project that only contains what you really need to build a Retrieval Augmented Generation system. It
-  contains basic implementations, but also adds observability and quality checks for all the parts the generator as well
-  as the retriever.
+  RAG4j/p is a java and python project that only contains what you really need to build a Retrieval Augmented 
+  Generation system.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rag4j.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rag4j
@@ -56,3 +55,4 @@ plugins:
 exclude:
   - CNAME
   - README.md
+  - diagrams/
