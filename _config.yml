@@ -56,3 +56,6 @@ exclude:
   - CNAME
   - README.md
   - diagrams/
+
+# Google Analytics
+google_analytics: G-8F82VTL4WZ
