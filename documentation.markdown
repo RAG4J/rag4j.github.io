@@ -22,6 +22,16 @@ An important part of the Retrieval Augmented Generation (RAG) system is the retr
 
 To be able to retrieve chunks from a corpus, the corpus needs to be indexed. The IndexingService uses a ResourceLoader to load the content. With a splitter and an embedder, vectors are created and stored in the content store.
 
+### Important classes of the retrieval part
+
+- The `Retriever` is responsible for retrieving relevant chunks from a large corpus of documents. It contains one method to search for relevant chunks `find_relevant_chunks` or `findRelevantChunks`. The method accepts the question to to use for finding relevant chunks and the number of chunks to retrieve. The retriever has additional methods that support retrieval strategies. You can obtain a chunk by document id and chunk id through _get_chunk_ or _getChunk_. You can also loop over all the chunks available in the retriever through _loop_over_chunks_ or _loopOverChunks_.
+- The `RetrievalStrategy` is responsible for constructing a context from the retrieval output. The context size is influenced by the chunk size, the amount of chunks to use, and the retrieval strategy. The Top-N retrieval strategy just returns the number of requested chunks as the context. The window retrieval strategy uses a window of chunks around the matched chunk from the same document.
+- The `IndexingService` is responsible for indexing the corpus. It uses a `ContentReader` to load the content. With a `Splitter` and an `Embedder`, vectors are created and stored in the content store.
+- The `ContentReader` is responsible for loading the content from the corpus. The content reader works best with the _IndexingService_. An example is the `VasaContentReader` which is used to load the Vasa corpus available in the provided jsonl file.
+- The `Splitter` is responsible for splitting the content into chunks. The splitter is used by the _IndexingService_ to split the content into chunks. A number of splitters are available. The `MaxTokenSplitter` that splits the chunks into chunks with a maximum amount of tokens. Then there is an `OpenNLPSentenceSplitter` in Java, and a `SentenceSplitter` in Python that splits the content into sentences. The `SingleChunkSplitter` does not really split the text into chunks, it creates one Chunk.
+- The `Embedder` is responsible for creating vectors from the chunks. There are different embedders. Most of the Embedders use a `Model` to create vectors from the tokens. We have a local running model, `AllMiniLmL6V2QEmbedder` in Java or `OnnxEmbedder` in Python. There is also an `OpenAIEmbedder` that uses the OpenAI API to create vectors from the tokens.
+- The `ContentStore` is responsible for storing the vectors. The _ContentStore_ is used by the _IndexingService_ to store the vectors. The _ContentStore_ is used by the _Retriever_ to retrieve the vectors. We have two _ContentStores_ available. The `InternalContentStore` that stores the vectors in memory. The `WeaviateContentStore` that stores the vectors in a [Weaviate](https://weaviate.io).
+
 ## The generation part of the system
 
 ![Generation Overview](/assets/images/generation-overview.png)
@@ -29,6 +39,11 @@ To be able to retrieve chunks from a corpus, the corpus needs to be indexed. The
 The generator is responsible for generating an answer based on the context and the question. The generator uses a model to generate text. In our case we only have the OpenAI LLM. The application uses the retrieval strategy to obtain relevant chunks. The chunks are used to construct the context. The context is provided to the generator together with the question.
 
 The quality component is responsible for determining the quality of the generated text. There is a quality if the answer really answers the question and if the answer is deduced from the context and not made up by the LLM. There is also a retriever quality, this makes use of the generated judgement list to determine the quality of the retrieved chunks.
+
+### Important classes of the generation part
+
+- The `Application` is the starting point for our RAG system. It receives the question from the user, obtains the context from the retriever, sends the question plus context to the generator and obtains an answer from the generator.The project contains a lot of sample applications. Some do only part of this flow, others do the complete flow.
+- The `AnswerGenerator` is responsible for generating an answer based on the context and the question. The generator uses a model to generate text. In our case we only have the `OpenaiAnswerGenerator`. The prompt to generate the answer is available in the code and can easily be adjusted.
 
 ## The quality component of the system
 
