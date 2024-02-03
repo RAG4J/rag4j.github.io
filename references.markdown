@@ -12,5 +12,5 @@ I don't think that OpenAI needs an introduction if you reached this page. If you
 ## Weaviate
 <img src="/assets/images/weaviate.png" alt="Weaviate Logo" style="height: 100px; padding: 50px;">
 
-In this project we use an InternalContentStore. This is handy when working with just a few vectors. It does not persist the data. Therefore you need to index the content on every run. With Weaviate we have vector store with a lot more capabilities. At the moment we just scratch the service of the power of Weaviate. We will implement Hybrid search and probably some more advanced features later on. 
+In this project we use an InternalContentStore. This is handy when working with just a few vectors. It does not persist the data. Therefore you need to index the content on every run. With Weaviate we have vector store with a lot more capabilities. At the moment we just scratch the service of the power of Weaviate. We will implement Hybrid search and probably some more advanced features later on. If you want more information about Weaviate, you can find it on their [website](https://weaviate.io).
 
