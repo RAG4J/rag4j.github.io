@@ -31,3 +31,5 @@ Java: [RAG4j](https://github.com/RAG4J/rag4j-jfokus)
 Python: [RAG4p](https://github.com/RAG4J/rag4p-jfokus)
 
 The repositories contain a README.md file with instructions on how to setup your environment.
+
+[The presentation used during the workshop is available here](/assets/preso/presentation.pdf).
