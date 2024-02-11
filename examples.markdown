@@ -3,7 +3,7 @@ layout: page
 title: Examples
 permalink: /examples/
 ---
-Both projects contain examples. For java the examples are in the `src/main/java/org/rag/examples` folder. For Python are in the root folder of the project `rag4p`. For both projects we used interfaces as much as possible to reflect the main components. In the design it is important that you do not have to initialise the whole project to start working with one of the components. Below is an example that works with an LLM to answer q question. You do not have to initialise the Retriever to execute the flow.
+Both projects contain examples. For java the examples are in the `src/main/java/org/rag/applications` folder. For Python are in the root folder of the project `rag4p`. For both projects we used interfaces as much as possible to reflect the main components. In the design it is important that you do not have to initialise the whole project to start working with one of the components. Below is an example that works with an LLM to answer q question. You do not have to initialise the Retriever to execute the flow.
 
 **Java code sample**
 ```java
