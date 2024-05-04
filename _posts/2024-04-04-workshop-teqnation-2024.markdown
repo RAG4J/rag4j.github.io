@@ -2,7 +2,7 @@
 layout: post
 title:  "Workshop Teqnation 2024"
 date:   2024-04-04 05:00:00 +0100
-categories: conference
+categories: [conference]
 ---
 The 22nd of May 2024, Daniel and Jettro will visit DeFabrique in Utrecht for the annual Teqnation conference. In the morning, we will deliver
 our workshop [The Art of Questions: Creating a Semantic Search-Based Question-Answering System with LLMs](https://conference.teqnation.com/timetable/).
