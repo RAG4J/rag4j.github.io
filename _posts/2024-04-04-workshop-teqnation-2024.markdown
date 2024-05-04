@@ -28,3 +28,5 @@ Java: [RAG4j](https://github.com/RAG4J/rag4j-tegnation)
 Python: [RAG4p](https://github.com/RAG4J/rag4p-teqnation)
 
 The repositories contain a README.md file with instructions on how to setup your environment.
+
+![Workshop Image](/assets/images/teqnation-session.jpg)
