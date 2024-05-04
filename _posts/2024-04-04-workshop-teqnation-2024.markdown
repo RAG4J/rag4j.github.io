@@ -4,7 +4,7 @@ title:  "Workshop Teqnation 2024"
 date:   2024-04-04 05:00:00 +0100
 categories: [conference]
 ---
-The 22nd of May 2024, Daniel and Jettro will visit DeFabrique in Utrecht for the annual Teqnation conference. In the morning, we will deliver
+The _22nd of May 2024_, Daniel and Jettro will visit DeFabrique in Utrecht for the annual Teqnation conference. In the morning, we will deliver
 our workshop [The Art of Questions: Creating a Semantic Search-Based Question-Answering System with LLMs](https://conference.teqnation.com/timetable/).
 This workshop makes use of our RAG4j/p project to teach a group of enthusiasts about the different aspects of
 Retrieval Augmented Generation. We will use the project to show the different parts of a RAG system. Time is short, still we want participants to experience the essential parts of a RAG system. As the project is small, little time is lost learning it.
