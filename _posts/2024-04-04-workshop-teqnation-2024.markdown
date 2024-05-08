@@ -20,13 +20,19 @@ We hope to see you in DeFabrique and that you will enjoy the workshop. If you ha
 
 _22nd of May 2024 11:00 - 12:45 Room KALVERMELK 2C_
 
-## Starting the workshop
-First choose your programming language (Java or Python). Then follow the instructions below:
+---
 
-Java: [RAG4j](https://github.com/RAG4J/rag4j-teqnation)
+## Preparing for the workshop
+>First choose your programming language (Java or Python). Then follow the instructions below:
+>
+>Java: [RAG4j](https://github.com/RAG4J/rag4j-teqnation)
+>
+>Python: [RAG4p](https://github.com/RAG4J/rag4p-teqnation)
+>
+>The repositories contain a README.md file with instructions on how to setup your environment.
 
-Python: [RAG4p](https://github.com/RAG4J/rag4p-teqnation)
+---
 
-The repositories contain a README.md file with instructions on how to setup your environment.
+&nbsp;
 
 ![Workshop Image](/assets/images/teqnation-session.jpg)
