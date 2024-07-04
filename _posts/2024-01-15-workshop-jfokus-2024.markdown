@@ -2,7 +2,7 @@
 layout: post
 title:  "Workshop jFokus 2024"
 date:   2024-01-24 05:00:00 +0100
-categories: conference
+categories: [conference]
 ---
 From 5 to 7 February 2024, Daniel and Jettro will visit Stockholm for the annual jFokus conference. On Monday, we will perform
 our workshop [Creating a Semantic Search-Based Question-Answering System with LLMs](https://www.jfokus.se/talks/1642).

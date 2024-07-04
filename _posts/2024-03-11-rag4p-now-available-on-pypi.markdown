@@ -2,7 +2,7 @@
 layout: post
 title:  "Rag4p now available on PyPi"
 date:   2024-01-24 05:00:00 +0100
-categories: news
+categories: [news]
 ---
 The Rag4p project is started to facilitate workshops. When working on other projects, I was copying the code from the 
 Rag4p project to the project I was working on. This was not very efficient. Therefore I decided to make the project 
