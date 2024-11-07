@@ -29,6 +29,10 @@ _7th of November 2024 10:35 - 12:30 Space for Hands-on labs_
 
 ---
 
+[The presentation used during the workshop is available here](/assets/preso/presentation-jfall-2024.pdf).
+
+---
+
 &nbsp;
 
 ![Workshop Image](/assets/images/jfall-2024.png)
