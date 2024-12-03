@@ -28,7 +28,7 @@ You have some choices to work with this example:
 2. Check out the sample application with all the code. You need to build rag4j on your local machine or have a GitHub account and use the public repo exposed by GitHub to build the project with Maven. [Java Magazine Example](https://github.com/RAG4J/rag4j-java-magazine)
 
 ### Using the maven repository on Github
-You need to add Github as a repository. You can use the next settings.xml as an example.
+The project uses maven to manage dependencies and for the build. You need to add Github as a repository. You can use the next settings.xml as an example.
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -70,7 +70,7 @@ You need to add Github as a repository. You can use the next settings.xml as an 
 ```
 
 ### Installing Ollama
-First, navigate to the [homepage of Ollama](https://ollama.com). Download the version for your operating system and install it. Next, open the command prompt and pull the model for the example _llama3.2_.
+Ollama is a tool that runs Large Language Models on your machine. First, navigate to the [homepage of Ollama](https://ollama.com). Download the version for your operating system and install it. Next, open the command prompt and pull the model for the example _llama3.2_.
 
 ```bash
 ollama pull llama3.2
@@ -142,6 +142,7 @@ public class JfallContentReader implements ContentReader {
 }
 ```
 The result of the previous code is a ContentStore with the chunks of text from the talks. The next step is to create a retriever to search for similar content to a question.
+If you follow the available repository, you can run step one. Read the comments, change the splitter to see he results change.
 
 ### Create a retriever
 The InternalContentStore is also a retriever. You can use the _findRelevantChunks_ method to search for similar content to the question. The following code shows how to search for similar content.
@@ -156,6 +157,7 @@ for (RelevantChunk relevantChunk : relevantChunks) {
     logSeparator();
 }
 ```
+You have now reached step two in the sample repository. 
 
 ### Respond with an answer using the ChatService
 Getting an answer requires a few classes with different responsibilities:
@@ -175,6 +177,7 @@ String answer = answerGenerator.generateAnswer(question, retrievalOutput.constru
 LOGGER.info("Question: {}", question);
 LOGGER.info("Answer: {}", answer);
 ```
+This is step three in the sample repository.
 
 ## Quality measurement
 The final step is the measure the quality of your solution. The quality of a RAG solution consists of three parts the diagram below shows the different parts of the quality measurement.
