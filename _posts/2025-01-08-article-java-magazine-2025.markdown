@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java Magazine Example"
-date:   2024-11-15 05:00:00 +0100
+date:   2025-01-06 05:00:00 +0100
 categories: [examples]
 ---
 Hi, this is the example accompanying the article I wrote for Java Magazine. Following this tutorial, you build your custom RAG application using the Rag4j application. First, you set up your environment; you create the application to index all the talks from the JFall 2024 conference. Next, you create a retriever to search for similar content to a question. Finally, you make the answer generator and measure the quality of your solution.
