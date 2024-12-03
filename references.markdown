@@ -9,6 +9,11 @@ permalink: /references/
 
 I don't think that OpenAI needs an introduction if you reached this page. If you are not familiar with OpenAI, you can find more information on their [website](https://openai.com). We use OpenAI in this project for multiple tasks. We use OpenAI to create embeddings, to generate answers, to generate questions, and te verify the quality of given answers.
 
+## Ollama
+<img src="/assets/images/ollama.png" alt="Ollama Logo" style="height: 100px; padding: 50px;">
+
+You use Ollama to run different Large Language Models on your local machine. Downloads are available for Windows, MacOS, and Linux. You can find more information on their [website](https://ollama.com). Both Rag4j and Rag4p have good integrations with Ollama.
+
 ## Weaviate
 <img src="/assets/images/weaviate.png" alt="Weaviate Logo" style="height: 100px; padding: 50px;">
 
