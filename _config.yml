@@ -55,6 +55,7 @@ plugins:
 #   - vendor/ruby/
 exclude:
   - CNAME
+  - WARP.md
   - README.md
   - diagrams/
 
